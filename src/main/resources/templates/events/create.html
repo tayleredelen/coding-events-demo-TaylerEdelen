@@ -7,23 +7,56 @@
 
 <form method="post">
     <div class="form-group">
+
         <label>Name
             <input th:field="${event.name}" class="form-control">
         </label>
         <p class="error" th:errors="${event.name}"></p>
     </div>
     <div class="form-group">
+
         <label>Description
             <input th:field="${event.description}" class="form-control">
         </label>
         <p class="error" th:errors="${event.description}"></p>
     </div>
     <div class="form-group">
+
         <label>Contact Email
             <input th:field="${event.contactEmail}" class="form-control">
         </label>
         <p class="error" th:errors="${event.contactEmail}"></p>
     </div>
+    <div class="form-group">
+
+        <label>Event Location
+            <input th:field="${event.location}" class="form-control">
+        </label>
+        <p class="error" th:errors="${event.location}"></p>
+    </div>
+
+    <label>Should The Attendee Register?
+        <input type=checkbox th:field="${event.shouldRegister}" class="form-control">
+    </label>
+    <p class="error" th:errors="${event.shouldRegister}"></p>
+    </div>
+    <div class="form-group">
+    </div>
+
+    <label>Number Of Attendees
+        <input th:field="${event.numOfAttendees}" class="form-control">
+    </label>
+    <p class="error" th:errors="${event.numOfAttendees}"></p>
+    </div>
+<br>
+    <label>Do You Want Event Swag?
+        <input th:field="${event.swag}" class="form-control">
+    </label>
+    <p class="error" th:errors="${event.swag}"></p>
+    </div>
+    <div class="form-group">
+    </div>
+
     <div class="form-group">
         <input type="submit" value="Create" class="btn btn-success">
     </div>
