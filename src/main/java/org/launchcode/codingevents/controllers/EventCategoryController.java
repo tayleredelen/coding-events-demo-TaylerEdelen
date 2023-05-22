@@ -32,7 +32,7 @@ public class EventCategoryController {
     }
 
 
-    @PostMapping() //doing something or an action after something happens on site is POST
+    @PostMapping("create") //doing something or an action after something happens on site is POST
     public String createEventCategoryForm(Errors errors, Model model) {
         if (errors.hasErrors()) {
             return "eventCategories/create";
