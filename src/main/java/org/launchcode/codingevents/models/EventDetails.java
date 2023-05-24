@@ -12,7 +12,7 @@ public class EventDetails extends AbstractEntity {
 
     @NotBlank(message = "Email is required")
     @Email(message = "Invalid email. Try again.")
-    private String contactEmail; //
+    private String contactEmail;
 
     public EventDetails(String description, String contactEmail) {
         this.description = description;
